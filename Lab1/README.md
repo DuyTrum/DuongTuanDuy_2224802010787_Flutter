@@ -2,7 +2,6 @@
 
 ## 🎥 Video Report
 
-[![Xem Video Report](https://img.shields.io/badge/Click%20to%20Watch-Video%20Report-red)](https://drive.google.com/file/d/1HRPVIrf3jwhaW7NfJUyJ6knQzEjAgsqO/view?usp=drive_link)
 
 [![Xem Demo](https://img.shields.io/badge/Click%20to%20Watch-Video%20Demo-blue)](https://drive.google.com/file/d/19D7T99HSMD50LUAPn6QpbhxepxmswSVB/view)
 
