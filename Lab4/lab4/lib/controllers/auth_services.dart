@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
+  final GoogleSignIn? _googleSignIn = kIsWeb ? null : GoogleSignIn();
 
   // Get current user
   User? get currentUser => _auth.currentUser;
@@ -40,11 +41,13 @@ class AuthService {
     }
   }
 
-  // Sign in with Google
   Future<UserCredential?> signInWithGoogle() async {
+    if (kIsWeb) {
+      throw UnsupportedError('Google sign-in is not supported on Web.');
+    }
     try {
       // Trigger the authentication flow
-      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      final GoogleSignInAccount? googleUser = await _googleSignIn!.signIn();
 
       if (googleUser == null) {
         return null; // User canceled the sign-in
@@ -70,7 +73,9 @@ class AuthService {
   // Sign out
   Future<void> signOut() async {
     await _auth.signOut();
-    await _googleSignIn.signOut();
+    if (!kIsWeb) {
+      await _googleSignIn!.signOut();
+    }
   }
 
   // Handle Firebase Auth exceptions

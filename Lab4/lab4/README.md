@@ -6,6 +6,7 @@
 - **Họ tên**: Dương Tuấn Duy
 - **MSSV**: 2224802010787
 - **Lớp**: [Tên lớp]
+- **Video Demo**: [Link Google Drive](https://drive.google.com/file/d/1nmxE-1UKUl-LBadid5wfkwpbrUf7egMo/view?usp=drive_link)
 
 ## Tính năng
 
