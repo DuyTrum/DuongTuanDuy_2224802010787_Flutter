@@ -1,16 +1,14 @@
-# flutter_todo_app
+# Lab 5 - Todo App with Node.js Backend
 
-A new Flutter project.
+Ứng dụng quản lý công việc (Todo) sử dụng Flutter kết nối với backend Node.js.
 
-## Getting Started
+## Thông tin sinh viên
+- **Họ tên**: Dương Tuấn Duy
+- **MSSV**: 2224802010787
+- **Lớp**: [Tên lớp]
+- **Video Demo**: [Link Google Drive](https://drive.google.com/file/d/1EIs89k5vV97ENsZiMyzMaxI_4XLoOREc/view?usp=drive_link)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Công nghệ sử dụng
+- **Flutter**: Frontend App
+- **Node.js & Express**: Backend API
+- **MongoDB**: Cơ sở dữ liệu
